@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import logo from './logo.svg';
-import './App.css';
+import {
+  HashRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
 
 import Header from '../Header/Header';
+import Home from '../Home/Home';
+
+import { Button, NavLink } from 'reactstrap';
+
+import './App.css';
+
 
 class App extends Component {
-
-  componentDidMount() {
-    console.log('comp did mount');
-    
-    this.props.dispatch({ type: 'FETCH_RANDOM_JOKE' });
-  }
-
   render() {
     return (
-      <div className="App">
-        <Header />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          {JSON.stringify(this.props.reduxState.randomJokeReducer.value)}
-          {JSON.stringify(this.props.reduxState.randomJokeReducer.value)}
-
-        </header>
-      </div>
+      <Router>
+        <section className="App">
+          <Header />
+          <Switch>
+            <Redirect exact from="/" to="/home" />
+            <Route
+              exact
+              path="/home"
+              component={Home}
+            />
+          </Switch>
+        </section>
+      </Router>
     );
   }
 }

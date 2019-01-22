@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div>
         <Nav pills>
-          <NavLink href="#">Link</NavLink>
+          <NavLink href="#">About</NavLink>
           <NavLink href="#">Link</NavLink>
           <NavLink href="#">Link</NavLink>
         </Nav>

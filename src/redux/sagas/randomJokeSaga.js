@@ -5,7 +5,7 @@ function* fetchRandomJoke() {
     console.log('fetch random joke saga:')
     try {
         const response = yield call(axios.get, 'http://api.icndb.com/jokes/random');
-        yield put( {type: 'SET_RANDOM_JOKE', payload: response.data} );
+        yield put( {type: 'SET_RANDOM_JOKE', payload: response.data.value} );
         console.log(response.data)
     }
     catch(error) {
