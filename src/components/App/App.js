@@ -7,8 +7,9 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import Header from '../Header/Header';
+import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
+import About from '../About/About';
 
 import { Button, NavLink } from 'reactstrap';
 
@@ -20,13 +21,18 @@ class App extends Component {
     return (
       <Router>
         <section className="App">
-          <Header />
+          <NavBar />
           <Switch>
             <Redirect exact from="/" to="/home" />
             <Route
               exact
               path="/home"
               component={Home}
+            />
+            <Route
+              exact
+              path="/about"
+              component={About}
             />
           </Switch>
         </section>
