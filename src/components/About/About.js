@@ -15,11 +15,11 @@ class About extends Component {
           <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="img-fluid" />
         </div>
         {/* {JSON.stringify(this.props.reduxState.bioReducer)} */}
-        <h5>{this.props.reduxState.bioReducer.name}</h5>
+        <h3>{this.props.reduxState.bioReducer.name}</h3>
         <h5>{this.props.reduxState.bioReducer.birthday}</h5>
-        <h5>{this.props.reduxState.bioReducer.homepage}</h5>
         <h5>{this.props.reduxState.bioReducer.place_of_birth}</h5>
         <h5>{this.props.reduxState.bioReducer.biography}</h5>
+        <h5><a href={this.props.reduxState.bioReducer.homepage}>www.chucknorris.com</a></h5>
       </section>
     );
   }

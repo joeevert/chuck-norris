@@ -10,6 +10,7 @@ import {
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import About from '../About/About';
+import Movies from '../Movies/Movies';
 
 import { Button, NavLink } from 'reactstrap';
 
@@ -33,6 +34,11 @@ class App extends Component {
               exact
               path="/about"
               component={About}
+            />
+            <Route
+              exact
+              path="/movies"
+              component={Movies}
             />
           </Switch>
         </section>

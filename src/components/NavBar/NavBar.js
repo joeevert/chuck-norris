@@ -7,9 +7,10 @@ class NavBar extends Component {
     return (
       <div>
         <Nav pills>
-          <Link to="/about">About</Link>
-          {/* <NavLink href="#">Link</NavLink> */}
-          {/* <NavLink href="#">Link</NavLink> */}
+          {/* <Link to="/about">About</Link> */}
+          {/* <Link to="/movies">Movies</Link> */}
+          <NavLink href="#about">About</NavLink>
+          <NavLink href="#movies">Movies</NavLink>
         </Nav>
       </div>
     );

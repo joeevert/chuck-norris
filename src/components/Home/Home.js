@@ -16,7 +16,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="App">
+      <section className="Home">
         <div className="imageDiv">
           <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="img-fluid" />
         </div>
