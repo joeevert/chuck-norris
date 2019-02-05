@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from 'react-router-dom';
 
 import { Button, NavLink } from 'reactstrap';
-
 import './Home.css';
-
-import Header from '../Header/Header';
 
 class Home extends Component {
 
@@ -25,7 +16,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="App">
+      <section className="Home">
         <div className="imageDiv">
           <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="img-fluid" />
         </div>
