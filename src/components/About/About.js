@@ -11,9 +11,9 @@ class About extends Component {
   render() {
     return (
       <section className="App">
-        <div className="imageDiv">
+        {/* <div className="imageDiv">
           <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="img-fluid" />
-        </div>
+        </div> */}
         {/* {JSON.stringify(this.props.reduxState.bioReducer)} */}
         <h3>{this.props.reduxState.bioReducer.name}</h3>
         <h5>{this.props.reduxState.bioReducer.birthday}</h5>

@@ -9,6 +9,7 @@ class NavBar extends Component {
         <Nav pills>
           {/* <Link to="/about">About</Link> */}
           {/* <Link to="/movies">Movies</Link> */}
+          <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#movies">Movies</NavLink>
         </Nav>
