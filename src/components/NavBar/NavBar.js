@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { Nav, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import './NavBar.css'
 
 class NavBar extends Component {
   render() {
     return (
-      <div>
-        <Nav pills>
-          {/* <Link to="/about">About</Link> */}
-          {/* <Link to="/movies">Movies</Link> */}
-          <NavLink href="#home">Home</NavLink>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#movies">Movies</NavLink>
-        </Nav>
+      <div className="nav-container">
+        {/* <Nav pills> */}
+          <NavLink href="#news">NEWS</NavLink>
+          <NavLink href="#links">LINKS</NavLink>
+          <NavLink href="#filmography">FILMOGRAPHY</NavLink>
+          <NavLink href="#bio">BIO</NavLink>
+          <NavLink href="#contact">CONTACT</NavLink>
+        {/* </Nav> */}
       </div>
     );
   }

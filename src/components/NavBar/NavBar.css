@@ -1,0 +1,11 @@
+.nav-container {
+  text-align: center;
+  background-color: #000;
+  padding: 25px;
+  /* position: fixed; */
+  width: 100%;
+}
+
+.nav-link {
+  display: inline;
+}

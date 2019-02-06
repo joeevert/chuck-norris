@@ -11,6 +11,7 @@ import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Movies from '../Movies/Movies';
+import Footer from '../Footer/Footer';
 
 import { Button, NavLink } from 'reactstrap';
 
@@ -41,6 +42,7 @@ class App extends Component {
               component={Movies}
             />
           </Switch>
+          <Footer />
         </section>
       </Router>
     );

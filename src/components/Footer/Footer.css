@@ -1,0 +1,13 @@
+.joke {
+  color: #fff;
+  margin: 0px;
+}
+
+.jokeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to right,  rgba(150, 31, 15, 0), #961f0f 53%, rgba(150, 31, 15, 0));
+}

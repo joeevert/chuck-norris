@@ -3,10 +3,10 @@
 }
 
 .imageDiv {
-  margin-bottom: 25px;
+  margin: 0px;
 }
 
-.jokeDiv {
-  text-align: center;
-  margin: 0px 25px 25px 25px;
+.chuck {
+  width: 100%;
+  height: auto;
 }
