@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import { Button } from 'reactstrap';
 import './Footer.css';
 
 class Footer extends Component {
@@ -19,12 +17,10 @@ class Footer extends Component {
 
   render() {
     return (
-      <section>
-        <div className="jokeContainer">
+        <footer className="jokeContainer">
         {this.props.reduxState.randomJokeReducer.joke && 
-          <h6 className="joke">{this.props.reduxState.randomJokeReducer.joke.toUpperCase()}</h6>}
-        </div>
-      </section>
+          <p className="joke">{this.props.reduxState.randomJokeReducer.joke.toUpperCase()}</p>}
+        </footer>
     );
   }
 }

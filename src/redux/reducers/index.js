@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import randomJokeReducer from './randomReducer';
+import randomJokeReducer from './randomJokeReducer';
 import bioReducer from './bioReducer';
 import moviesReducer from './moviesReducer';
 

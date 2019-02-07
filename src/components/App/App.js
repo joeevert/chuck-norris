@@ -9,8 +9,8 @@ import {
 
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
-import About from '../About/About';
-import Movies from '../Movies/Movies';
+import Bio from '../Bio/Bio';
+import Filmography from '../Filmography/Filmography';
 import Footer from '../Footer/Footer';
 
 import { Button, NavLink } from 'reactstrap';
@@ -19,6 +19,18 @@ import './App.css';
 
 
 class App extends Component {
+
+  // componentDidMount() {
+  //   this.props.dispatch({ type: 'FETCH_RANDOM_JOKE' });
+  //   this.interval = setInterval(() => {
+  //     this.props.dispatch({ type: 'FETCH_RANDOM_JOKE' });
+  //   }, 10000);
+  // }
+
+  // componentWillUnmount() {
+  //   clearInterval(this.interval);
+  // }
+
   render() {
     return (
       <Router>
@@ -33,13 +45,13 @@ class App extends Component {
             />
             <Route
               exact
-              path="/about"
-              component={About}
+              path="/bio"
+              component={Bio}
             />
             <Route
               exact
-              path="/movies"
-              component={Movies}
+              path="/filmography"
+              component={Filmography}
             />
           </Switch>
           <Footer />

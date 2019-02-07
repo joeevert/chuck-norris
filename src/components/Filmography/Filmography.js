@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './Movies.css';
+import './Filmography.css';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-class Movies extends Component {
+class Filmography extends Component {
   state = {
     modal: false
   }
@@ -25,6 +25,9 @@ class Movies extends Component {
         {/* {JSON.stringify(this.props.reduxState.moviesReducer)} */}
         {this.props.reduxState.moviesReducer.map((movie, index) =>
         <div key={index}>
+          <div className="infoBtn">
+            <h5>i</h5>
+          </div>
           <img 
             className="image" 
             src={`http://image.tmdb.org/t/p/w200${movie.poster_path}`} 
@@ -42,4 +45,4 @@ const mapReduxStateToProps = (reduxState) => ({
   reduxState
  });
 
-export default connect(mapReduxStateToProps)(Movies);
+export default connect(mapReduxStateToProps)(Filmography);

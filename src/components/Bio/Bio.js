@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, NavLink } from 'reactstrap';
 
-class About extends Component {
+class Bio extends Component {
 
   componentDidMount() {
     this.props.dispatch({ type: 'FETCH_BIO' });
@@ -10,11 +10,7 @@ class About extends Component {
 
   render() {
     return (
-      <section className="App">
-        {/* <div className="imageDiv">
-          <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="img-fluid" />
-        </div> */}
-        {/* {JSON.stringify(this.props.reduxState.bioReducer)} */}
+      <section>
         <h3>{this.props.reduxState.bioReducer.name}</h3>
         <h5>{this.props.reduxState.bioReducer.birthday}</h5>
         <h5>{this.props.reduxState.bioReducer.place_of_birth}</h5>
@@ -29,4 +25,4 @@ const mapReduxStateToProps = (reduxState) => ({
   reduxState
  });
 
-export default connect(mapReduxStateToProps)(About);
+export default connect(mapReduxStateToProps)(Bio);

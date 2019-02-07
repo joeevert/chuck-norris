@@ -1,0 +1,31 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* width: 200px; */
+  /* height: 300px; */
+}
+
+.image {
+  cursor: pointer;
+}
+
+.image:hover {
+  opacity: .25;
+}
+
+.infoBtn {
+  display: flex;
+  background-color: #ffc400;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 5;
+  left: 5;
+}
+
+.infoBtn h5 {
+  margin: auto;
+  text-align: center;
+}

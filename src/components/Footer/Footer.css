@@ -9,5 +9,20 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  background-image: linear-gradient(to right,  rgba(150, 31, 15, 0), #961f0f 53%, rgba(150, 31, 15, 0));
+  background-image: linear-gradient(to right,  rgba(150, 31, 15, 0), #961f0f 50%, rgba(150, 31, 15, 0));
+  position: relative;
+
 }
+
+/* .fadein {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+} */
