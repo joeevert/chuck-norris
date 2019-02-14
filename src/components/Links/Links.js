@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './Footer.css';
+import './Links.css';
 
-class Footer extends Component {
+class Links extends Component {
   render() {
     return (
-      <div>
-        <p>Footer will go here</p>
+      <div className="fill" id="links">
+        <p>links section will go here</p>
       </div>
     );
   }
@@ -16,4 +16,4 @@ const mapReduxStateToProps = (reduxState) => ({
   reduxState
  });
 
-export default connect(mapReduxStateToProps)(Footer);
+export default connect(mapReduxStateToProps)(Links);

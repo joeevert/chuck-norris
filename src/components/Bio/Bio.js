@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button, NavLink } from 'reactstrap';
 
 class Bio extends Component {
 
@@ -10,13 +9,14 @@ class Bio extends Component {
 
   render() {
     return (
-      <section>
-        <h3>{this.props.reduxState.bioReducer.name}</h3>
+      <div id="bio">
+        <h3>THE MAN, THE MYTH, THE LEGEND.</h3>
+        <h1>HIS STORIES:</h1>
         <h5>{this.props.reduxState.bioReducer.birthday}</h5>
         <h5>{this.props.reduxState.bioReducer.place_of_birth}</h5>
         <h5>{this.props.reduxState.bioReducer.biography}</h5>
         <h5><a href={this.props.reduxState.bioReducer.homepage}>www.chucknorris.com</a></h5>
-      </section>
+      </div>
     );
   }
 }

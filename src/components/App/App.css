@@ -1,9 +1,13 @@
 .App {
-  text-align: center;
-  background-color: #000;
+  /* text-align: center; */
+  background-color: #040404;
 }
 
-/* .jokeDiv {
-  text-align: center;
-  margin: 0px 25px 25px 25px;
-} */
+.imageDiv {
+  margin: 0px;
+}
+
+.chuck {
+  width: 100%;
+  height: auto;
+}

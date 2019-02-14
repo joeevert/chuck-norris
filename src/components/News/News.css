@@ -1,0 +1,40 @@
+.newsSection {
+  /* background-color: #040404; */
+  background: #040404 url(/images/news-bg.png) no-repeat 90% 50%;
+  background-size: 25% auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px 0px 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.newsSection p, h6 {
+  color: #fff;
+  line-height: 2;
+}
+
+.newsSection a {
+  color: #FFC400;
+}
+
+.newsSection h1 {
+  color: #D62E1B;
+  font-size: 5.5vw;
+  font-weight: bolder;
+}
+
+.newsSection h2 {
+  color: #FFDC67;
+  font-weight: bolder;
+}
+
+.newsSection img {
+  border-radius: 5px;
+  height: auto;
+  max-width: 100%;
+}
+
+.rightNews {
+  padding-top: 12.5%;
+}

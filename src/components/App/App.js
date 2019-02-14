@@ -1,62 +1,41 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from 'react-router-dom';
+// import { HashRouter as Router } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
 
-import NavBar from '../NavBar/NavBar';
-import Home from '../Home/Home';
-import Bio from '../Bio/Bio';
-import Filmography from '../Filmography/Filmography';
-import Footer from '../Footer/Footer';
-
-import { Button, NavLink } from 'reactstrap';
 
 import './App.css';
 
+import NavBar from '../NavBar/NavBar';
+import News from '../News/News';
+import Shop from '../Shop/Shop';
+import Links from '../Links/Links';
+import Filmography from '../Filmography/Filmography';
+import Bio from '../Bio/Bio';
+import Contact from '../Contact/Contact';
+import Jokes from '../Jokes/Jokes';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
 
-  // componentDidMount() {
-  //   this.props.dispatch({ type: 'FETCH_RANDOM_JOKE' });
-  //   this.interval = setInterval(() => {
-  //     this.props.dispatch({ type: 'FETCH_RANDOM_JOKE' });
-  //   }, 10000);
-  // }
-
-  // componentWillUnmount() {
-  //   clearInterval(this.interval);
-  // }
-
   render() {
     return (
-      <Router>
-        <section className="App">
-          <NavBar />
-          <Switch>
-            <Redirect exact from="/" to="/home" />
-            <Route
-              exact
-              path="/home"
-              component={Home}
-            />
-            <Route
-              exact
-              path="/bio"
-              component={Bio}
-            />
-            <Route
-              exact
-              path="/filmography"
-              component={Filmography}
-            />
-          </Switch>
-          <Footer />
-        </section>
-      </Router>
+      // <Router>
+      <main className="App">
+        <NavBar />
+        <News />
+        <Shop />
+        <Links />
+        <Filmography />
+        <Bio />
+        <Contact />
+        <Footer />
+        <Jokes />
+        {/* <div className="imageDiv">
+          <img src='/images/chuck-norris.jpg' alt="Chuck Norris" className="chuck" />
+        </div> */}
+      </main>
+      // </Router>
     );
   }
 }
