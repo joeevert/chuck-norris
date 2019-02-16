@@ -1,5 +1,19 @@
 .shopSection {
   background: url(/images/shop-chuck-bg--left.png) no-repeat 5% 20px, url(/images/shop-chuck-bg--right.png) no-repeat 95% 20px, url(/images/sun-01.png) no-repeat center bottom, url(/images/bg-red-01.png) repeat;
-  background-size: 30% auto, 30% auto, 326px 102px ,148px 150px;
+  background-size: 25% auto, 25% auto, 325px auto ,148px 150px;
   padding: 40px 0;
+  text-align: center;
+}
+
+.shopSection h1 {
+  color: #FFC400;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+  margin: 0px;
+  font-size: 4em;
+}
+
+.shopSection h3 {
+  color: white;
+  margin: 30px
 }

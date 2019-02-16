@@ -6,7 +6,10 @@ class Shop extends Component {
   render() {
     return (
       <section className="shopSection">
-        <p>Footer will go here</p>
+        <div>
+          <h1>SHOP</h1>
+          <h3>STORE TEMORARILY CLOSED. COMING BACK SOON!</h3>
+        </div>
       </section>
     );
   }
